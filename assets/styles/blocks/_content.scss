@@ -1,0 +1,17 @@
+.content-block {
+    .content-container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        a {
+            @include inline-link;
+        }
+
+        img {
+            &.aligncenter {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

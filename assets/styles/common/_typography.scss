@@ -1,0 +1,94 @@
+@mixin p-font-style {
+    line-height: $line-height-base;
+    font-weight: $font-weight-light;
+    font-style: normal;
+}
+
+@mixin h1-font-style {
+    font-family: $font-family-bebas;
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+}
+
+@mixin h2-font-style {
+    font-family: $font-family-bebas;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    text-transform: uppercase;
+}
+
+@mixin h3-font-style {
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+}
+
+@mixin h4-font-style {
+    font-family: $font-family-roboto-mono;
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+}
+
+@mixin h5-font-style {
+    font-family: $font-family-roboto-mono;
+    font-size: $h5-font-size;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    line-height: $h5-line-height;
+    letter-spacing: 1px;
+}
+
+@mixin h6-font-style {
+    font-family: $font-family-roboto-mono;
+    font-size: $h6-font-size;
+    line-height: $h6-line-height;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1, .h1 {
+    @include h1-font-style;
+}
+
+h2, .h2 {
+    @include h2-font-style;
+}
+
+h3, .h3 {
+    @include h3-font-style;
+}
+
+h4, .h4 {
+    @include h4-font-style;
+}
+
+h5, .h5 {
+    @include h5-font-style;
+}
+
+h6, .h6 {
+    @include h6-font-style;
+}
+
+p, .p {
+    @include p-font-style;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 15px;
+
+    a {
+        text-decoration: underline;
+        color: inherit;
+
+        &:hover, &:focus {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}
+
+.icon-font {
+    @include icon-font;
+}

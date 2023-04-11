@@ -1,0 +1,10 @@
+.gallery-block {
+    .image-container {
+        margin-bottom: 30px;
+
+        .image {
+            @include bg-image;
+            padding-bottom: 70%;
+        }
+    }
+}
